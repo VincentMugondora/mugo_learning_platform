@@ -5,7 +5,7 @@ const _layout = () => {
   return (
     <ThemeProvider value={DefaultTheme}>
       <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="" />
+        <Stack.Screen name="index" />
       </Stack>
     </ThemeProvider>
   );
