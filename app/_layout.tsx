@@ -1,12 +1,14 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
+import { Stack } from "expo-router";
 
 const _layout = () => {
   return (
-    <View>
-      <Text>_layout</Text>
-    </View>
-  )
-}
+    <ThemeProvider value={DefaultTheme}>
+      <Stack screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="" />
+      </Stack>
+    </ThemeProvider>
+  );
+};
 
-export default _layout
+export default _layout;
